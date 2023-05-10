@@ -25,13 +25,7 @@ Step 6: Display message give in MainActivity file.
 Step 7: Save and run the application.
 
 ## PROGRAM:
-```
-/*
-Program to print the text “Hello World”.
-Developed by: N. SIDDARTHAN
-Registeration Number : 212221040154
-*/
-```
+
 activity_main.xml :
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -55,6 +49,12 @@ activity_main.xml :
 ```
 MainActivity.java :
 ```
+/*
+Program to print the text “Hello World”.
+Developed by: N. SIDDARTHAN
+Registeration Number : 212221040154
+*/
+
 package com.example.exp1;
 
 import android.support.v7.app.AppCompatActivity;
@@ -100,9 +100,9 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
-## OUTPUT
+## OUTPUT:
 
 ![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/5db657b1-aed3-429e-9ee0-2fbe0bb0ae59)
 
-## RESULT
-Thus a Simple Android Application create a HelloWorld Activity using all lifecycles methods to display messages using Android Studio is developed and executed successfully.
+## RESULT:
+Thus, a Simple Android Application create a HelloWorld Activity using all lifecycles methods to display messages using Android Studio is developed and executed successfully.
