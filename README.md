@@ -56,10 +56,9 @@ Registeration Number : 212221040154
 */
 
 package com.example.exp1;
-
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,43 +66,59 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this, "onCreate Called", Toast.LENGTH_SHORT).show();
     }
+
     @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d("lifecycle","onStart invoked");
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d("lifecycle","onResume invoked");
-    }
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d("lifecycle","onPause invoked");
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d("lifecycle","onStop invoked");
-    }
-    @Override
-    protected void onRestart() {
+    protected void onRestart(){
+        Toast.makeText(this, "onRestart Called", Toast.LENGTH_SHORT).show();
         super.onRestart();
-        Log.d("lifecycle","onRestart invoked");
     }
     @Override
-    protected void onDestroy() {
+    protected void onStart(){
+        Toast.makeText(this, "onStart Called", Toast.LENGTH_SHORT).show();
+
+        super.onStart();
+    }
+    @Override
+    protected void onResume(){
+        Toast.makeText(this, "onResume Called", Toast.LENGTH_SHORT).show();
+
+        super.onResume();
+    }
+    @Override
+    protected void onPause(){
+        Toast.makeText(this, "onPause Called", Toast.LENGTH_SHORT).show();
+
+        super.onPause();
+    }
+    @Override
+    protected void onStop(){
+        Toast.makeText(this, "onStop Called", Toast.LENGTH_SHORT).show();
+
+        super.onStop();
+    }
+    @Override
+    protected void onDestroy(){
+        Toast.makeText(this, "onDestroy Called", Toast.LENGTH_SHORT).show();
+
         super.onDestroy();
-        Log.d("lifecycle","onDestroy invoked");
     }
 }
 ```
 ## OUTPUT:
 
-![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/fa0b3bb0-9109-4314-bade-b29b295b44ff)
-![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/39e60d62-2073-414d-ac9b-e9d317558831)
+![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/9a1f954e-a9c8-4cbf-bf73-6edbb97df378)
+
+![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/a2ef3eb2-8b95-4377-be72-e80599e17685)
+
+![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/abe0f11a-98de-4e73-8fa9-67074ed1aa8e)
+
+![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/dabf2256-c354-4173-839e-25a6f448f5b2)
+
+![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/9d96a188-d996-40e2-b21d-7dfd5ffc26cd)
+
+![image](https://github.com/Siddarthan999/MAD-EXP-1-To-Create-a-HelloWorld-Activity-using-all-Lifecycles-Methods-to-Display-Messages/assets/91734840/6f3771ca-4c08-485a-973c-bd0cc782ad32)
 
 ## RESULT:
 Thus, a Simple Android Application create a HelloWorld Activity using all lifecycles methods to display messages using Android Studio is developed and executed successfully.
