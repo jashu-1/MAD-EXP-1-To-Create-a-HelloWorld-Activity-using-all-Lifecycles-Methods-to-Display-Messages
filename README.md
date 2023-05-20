@@ -25,7 +25,13 @@ Step 6: Display message give in MainActivity file.
 Step 7: Save and run the application.
 
 ## PROGRAM:
-
+```
+/*
+Program to print the text “Hello World”.
+Developed by: N. SIDDARTHAN
+Registeration Number : 212221040154
+*/
+```
 activity_main.xml :
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -49,12 +55,6 @@ activity_main.xml :
 ```
 MainActivity.java :
 ```
-/*
-Program to print the text “Hello World”.
-Developed by: N. SIDDARTHAN
-Registeration Number : 212221040154
-*/
-
 package com.example.exp1;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
